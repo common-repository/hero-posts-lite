@@ -1,0 +1,28 @@
+/**
+ * Note that these styles are loaded *before* editor styles, so that
+ * editor-specific styles using the same selectors will take precedence.
+ */
+.wp-block-hero-posts-controls {
+	color: #c3c4c7;
+	background: #1d2327;
+	border: 2px solid #c99;
+	padding: 20px;
+}
+.wp-block-bbl-hero-posts {
+	color: #c3c4c7;
+	background: #1d2327;
+	border: 2px solid #c99;
+	padding: 20px;
+}
+
+.hero-posts-align-left {
+	text-align: left;
+}
+
+.hero-posts-align-center {
+	text-align: center;
+}
+
+.hero-posts-align-right {
+	text-align: right;
+}

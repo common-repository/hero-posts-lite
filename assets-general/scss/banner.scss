@@ -1,0 +1,26 @@
+/* Banner
+------------------------------------------------------------------ */
+
+.hero-posts-banner {	
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+    border: 0;
+    border-width: var(--hero-posts-banner-border-width);
+    border-style: var(--hero-posts-banner-border-style);
+    border-color: var(--hero-posts-banner-border-color);
+	> div {
+		margin-right: auto !important;
+		margin-left: auto !important;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	.hero-posts-column-align-right & {
+		margin-right: 0;		
+	}
+	.hero-posts-column-align-left & {
+		margin-left: 0;		
+	}
+}

@@ -1,0 +1,698 @@
+/* Simplify default BB light view 
+------------------------------------------------------------------ */
+.hero-posts-lite_page_hero-posts-edit,
+.hero-posts_page_hero-posts-edit {
+  --hero-posts-checkbox-group-columns: 5;
+  /* Icons */
+  /* Repeater */
+  /* Checkbox group */
+  /* Custom widths */
+  /* Inner row / column */
+  /* HTML */
+  /* Separator */
+  /* Fix */
+  /* Add new template */
+  /* Lite version hidden options */
+  /*.bt_bb_dialog_item[data-param_name="image_hover_blur_from"],
+  .bt_bb_dialog_item[data-param_name="image_hover_blur_to"] {
+  	opacity: 0.5;
+  	 pointer-events: none;
+  }*/
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item .bt_bb_toolbar .bt_bb_order,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item .bt_bb_toolbar .bt_bb_order {
+  display: none;
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon {
+  padding: 0;
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon:before,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon:before {
+  display: none;
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_row:before,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_row:before {
+  content: "";
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_inner_row:before,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_inner_row:before {
+  content: "";
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_item:before,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_item:before {
+  content: "";
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_slider_swiper:before,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_slider_swiper:before {
+  content: "";
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_slider_swiper_slide:before,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_slider_swiper_slide:before {
+  content: "";
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_banner:before,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_banner:before {
+  content: "";
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_html:before,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_html:before {
+  content: "";
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_separator:before,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_separator:before {
+  content: "";
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_repeater:before,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_repeater:before {
+  content: "";
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_slider_swiper_repeater:before,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_content .bt_bb_icon_hero_posts_slider_swiper_repeater:before {
+  content: "";
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater),
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater) {
+  border-style: dotted;
+  border-width: 3px;
+  border-color: #CCCCCC;
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater) > .bt_bb_item.bt_bb_icon_hero_posts_repeater,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater) > .bt_bb_item.bt_bb_icon_hero_posts_repeater {
+  background-color: transparent;
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater) > .bt_bb_item.bt_bb_icon_hero_posts_repeater > .bt_bb_toolbar,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater) > .bt_bb_item.bt_bb_icon_hero_posts_repeater > .bt_bb_toolbar {
+  padding-top: 5px;
+  padding-bottom: 2px;
+  z-index: 1;
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater) > .bt_bb_item.bt_bb_icon_hero_posts_repeater > .bt_bb_toolbar .bt_bb_preview_name,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater) > .bt_bb_item.bt_bb_icon_hero_posts_repeater > .bt_bb_toolbar .bt_bb_preview_name {
+  font-weight: 400;
+  opacity: 0.6;
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater) .bt_bb_toolbar .bt_bb_preview .bt_bb_preview_param_repeat_count,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater) .bt_bb_toolbar .bt_bb_preview .bt_bb_preview_param_repeat_count {
+  font-weight: 800;
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater) .bt_bb_toolbar .bt_bb_preview .bt_bb_preview_param_repeat_count:after,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater) .bt_bb_toolbar .bt_bb_preview .bt_bb_preview_param_repeat_count:after {
+  content: " x ";
+  display: block;
+  float: left;
+  padding: 0 0.4em 0 0;
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater) .bt_bb_toolbar .bt_bb_preview .bt_bb_preview_param_repeat_count:before,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater) .bt_bb_toolbar .bt_bb_preview .bt_bb_preview_param_repeat_count:before {
+  display: block;
+  float: left;
+  font-weight: 400;
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-type=checkbox_group],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-type=checkbox_group] {
+  display: grid;
+  grid-template-columns: repeat(var(--hero-posts-checkbox-group-columns), 1fr);
+  gap: 1em;
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-type=checkbox_group] b,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-type=checkbox_group] b {
+  grid-column: 1/span var(--hero-posts-checkbox-group-columns);
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-type=checkbox_group] label,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-type=checkbox_group] label {
+  /* text-align: center; */
+  margin: 0 !important;
+  display: flex;
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-type=checkbox_group] label input,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-type=checkbox_group] label input {
+  margin: 0 5px 0 0;
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-type=checkbox_group] label span,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-type=checkbox_group] label span {
+  display: block;
+  font-size: 0.875em;
+  line-height: 1.2;
+  margin-top: 2px;
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=order_by],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=order],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=sticky_posts],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_overlay_background_gradient_type],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_overlay_background_gradient_start],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_overlay_background_gradient_end],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=content_background_color],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=content_text_color],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=post_format_icons],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=post_data_style],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=categories_style],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=navigation],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=navigation_size],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=navigation_vertical_position],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=order_by],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=order],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=sticky_posts],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_overlay_background_gradient_type],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_overlay_background_gradient_start],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_overlay_background_gradient_end],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=content_background_color],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=content_text_color],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=post_format_icons],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=post_data_style],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=categories_style],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=navigation],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=navigation_size],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=navigation_vertical_position] {
+  flex: 0 0 33%;
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=content_background_color],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=content_background_color] {
+  flex: 0 0 66%;
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=category_filter],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=tag_filter],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=date_filter],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=post_format_filter],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=taxonomy_filter],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=author_filter],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_size],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_lazy_load],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_overlay_hover_opacity_from],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_overlay_hover_opacity_to],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_hover_blur_from],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_hover_blur_to],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_hover_zoom_from],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_hover_zoom_to],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=effect],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=autoplay_delay],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=pagination],
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=pagination_size],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=category_filter],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=tag_filter],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=date_filter],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=post_format_filter],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=taxonomy_filter],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=author_filter],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_size],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_lazy_load],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_overlay_hover_opacity_from],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_overlay_hover_opacity_to],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_hover_blur_from],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_hover_blur_to],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_hover_zoom_from],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_hover_zoom_to],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=effect],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=autoplay_delay],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=pagination],
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=pagination_size] {
+  flex: 0 0 50%;
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_lazy_load] b,
+.hero-posts_page_hero-posts-edit .bt_bb_dialog_item[data-param_name=image_lazy_load] b {
+  margin-bottom: 1em;
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_inner_row .bt_bb_horizontal,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_inner_row .bt_bb_horizontal {
+  margin: 0;
+  background: #fff;
+  border: none;
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_item[data-base=_content] .bt_bb_toolbar > span,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_item[data-base=_content] .bt_bb_toolbar > span {
+  display: none;
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h1, .hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h2, .hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h3, .hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h4, .hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h5, .hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content p,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h1,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h2,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h3,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h4,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h5,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content p {
+  margin-top: 0;
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h1:last-child, .hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h2:last-child, .hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h3:last-child, .hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h4:last-child, .hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h5:last-child, .hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content p:last-child,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h1:last-child,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h2:last-child,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h3:last-child,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h4:last-child,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content h5:last-child,
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html .bt_bb_content p:last-child {
+  margin-bottom: 0;
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_item.bt_bb_icon_hero_posts_separator,
+.hero-posts_page_hero-posts-edit .bt_bb_item.bt_bb_icon_hero_posts_separator {
+  opacity: 0.5;
+}
+.hero-posts-lite_page_hero-posts-edit .bt_bb_item.bt_bb_icon_hero_posts_separator:hover,
+.hero-posts_page_hero-posts-edit .bt_bb_item.bt_bb_icon_hero_posts_separator:hover {
+  opacity: 1;
+}
+.hero-posts-lite_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item .bt_bb_item .bt_bb_item .bt_bb_item.bt_bb_icon > .bt_bb_toolbar ~ [data-reactid],
+.hero-posts_page_hero-posts-edit #bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item .bt_bb_item .bt_bb_item .bt_bb_item.bt_bb_icon > .bt_bb_toolbar ~ [data-reactid] {
+  margin-left: 0em;
+  width: 100%;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template {
+  width: 95% !important;
+  left: 50% !important;
+  top: 50px;
+  bottom: 50px;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content {
+  --gap: 10px;
+  --item-inner-scale: 1.1;
+  padding: calc(2 * var(--gap)) var(--gap) 0;
+  overflow-x: hidden;
+  max-height: calc(100% - 62px) !important;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content.loading,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content.loading {
+  opacity: 0.3;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content.loading .bt_bb_hero_template_item,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content.loading .bt_bb_hero_template_item {
+  pointer-events: none;
+  cursor: initial;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item {
+  padding: 0 var(--gap) calc(2 * var(--gap));
+  flex-basis: 33.3333%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item:hover,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item:hover {
+  z-index: 1;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item:hover .bt_bb_hero_template_item_inner,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item:hover .bt_bb_hero_template_item_inner {
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
+  /* height: auto; */
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item:hover .bt_bb_hero_template_item_inner,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item:hover .bt_bb_hero_template_item_inner {
+  /* transform: scale(var(--item-inner-scale)); */
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner {
+  border-radius: 5px;
+  height: 100%;
+  box-sizing: border-box;
+  border: 5px solid #eee;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:before, .hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:after,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:before,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:after {
+  content: " ";
+  flex: auto;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:after,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:after {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:before,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:before {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner img,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner img {
+  width: auto;
+  display: block;
+  padding: 5px;
+  /* transform: translateY(0); */
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only {
+  text-decoration: none;
+  color: #0e0e0e;
+  padding: 1em;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only .bt_bb_hero_template_item_inner_pro_only_info,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only .bt_bb_hero_template_item_inner_pro_only_info {
+  font-weight: 800;
+  font-size: 1.5em;
+  display: block;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only:before,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only:before {
+  content: "";
+  font-family: "dashicons";
+  font-size: 3.5em;
+  display: block;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only:hover,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only:hover {
+  /* transform: translate(-50%, -50%) scale(1.1); */
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only_href,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_href,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_add,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only_href,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_href,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_add {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 12px;
+  display: flex;
+  gap: 0.5em;
+  position: absolute;
+  bottom: 1em;
+  /* box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.2); */
+  transform: translateY(0) translateX(0);
+  opacity: 0;
+  transition: opacity 300ms ease-out, transform 200ms ease-out;
+  z-index: 1;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:hover .bt_bb_hero_template_item_inner_pro_only,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:hover .bt_bb_hero_template_item_inner_pro_only {
+  opacity: 1;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:hover .bt_bb_hero_template_item_inner_pro_only_href,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:hover .bt_bb_hero_template_item_inner_href,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:hover .bt_bb_hero_template_item_inner_add,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:hover .bt_bb_hero_template_item_inner_pro_only_href,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:hover .bt_bb_hero_template_item_inner_href,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner:hover .bt_bb_hero_template_item_inner_add {
+  opacity: 1;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only_href,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only_href {
+  background: #ff7f00;
+  opacity: 1;
+  position: relative;
+  bottom: auto;
+  display: inline-flex;
+  margin: 1em auto;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only_href:before,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only_href:before {
+  content: "";
+  font-family: bold-builder;
+  display: inline-block;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only_href:hover,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_pro_only_href:hover {
+  transform: translateY(-5px);
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_href,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_href {
+  background: #ff7f00;
+  right: 1em;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_href:before,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_href:before {
+  content: "";
+  font-family: bold-builder;
+  display: inline-block;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_href:hover,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_href:hover {
+  transform: translateY(-5px);
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_add,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_add {
+  background: #a3a3a3;
+  left: 1em;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_add:before,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item .bt_bb_hero_template_item_inner .bt_bb_hero_template_item_inner_add:before {
+  content: "";
+  font-family: bold-builder;
+  display: inline-block;
+  /* transform: rotate(45deg);							 */
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item.bt_bb_hero_template_item_pro img,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item.bt_bb_hero_template_item_pro img {
+  opacity: 0.3;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item.bt_bb_hero_template_item_pro .bt_bb_hero_template_item_inner_href,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item.bt_bb_hero_template_item_pro .bt_bb_hero_template_item_inner_add,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item.bt_bb_hero_template_item_pro .bt_bb_hero_template_item_inner_href,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item.bt_bb_hero_template_item_pro .bt_bb_hero_template_item_inner_add {
+  display: none;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item:not(.bt_bb_hero_template_item_pro):not(.bt_bb_hero_template_item_title),
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item:not(.bt_bb_hero_template_item_pro):not(.bt_bb_hero_template_item_title) {
+  cursor: pointer;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item:not(.bt_bb_hero_template_item_pro):not(.bt_bb_hero_template_item_title) .bt_bb_hero_template_item_inner_pro_only,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item:not(.bt_bb_hero_template_item_pro):not(.bt_bb_hero_template_item_title) .bt_bb_hero_template_item_inner_pro_only {
+  display: none;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item:first-child .bt_bb_hero_template_item_inner_href,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item:first-child .bt_bb_hero_template_item_inner_href {
+  display: none;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item_title,
+.hero-posts_page_hero-posts-edit #bt_bb_dialog.bt_bb_dialog_add_template .bt_bb_dialog_content .bt_bb_hero_template_item_title {
+  flex-basis: 100%;
+  font-size: 1.25em;
+}
+
+/* Simplify default BB light view 
+------------------------------------------------------------------ */
+#bt-bb-light-editor #bt_bb .bt_bb_icon_hero_posts_item:hover {
+  border-color: #ec008c;
+  box-shadow: 0 0 0 2px #ec008c;
+}
+#bt-bb-light-editor #bt_bb .bt_bb_icon_hero_posts_item .bt_bb_preview {
+  /*display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  .bt_bb_preview_name {
+  	grid-column: 1 / span 3;
+  }
+  .bt_bb_preview_param_vertical_align {
+  	grid-row: 2 / span 1;
+  	grid-column: 1 / span 1;
+  	&:before {
+  		content: 'v align: ';
+  	}
+  }
+  .bt_bb_preview_param_align {
+  	grid-row: 2 / span 1;
+  	grid-column: 2 / span 1;
+  	&:before {
+  		content: 'h align: ';
+  	}
+  }
+  .bt_bb_preview_param_image_position {
+  	grid-row: 2 / span 1;
+  	grid-column: 3 / span 1;
+  	&:before {
+  		content: 'image: ';
+  	}
+  }*/
+}
+
+@media only screen and (min-width: 850px) {
+  .hero-posts-template_page_hero-posts-edit #postbox-container-1 {
+    position: fixed;
+    right: 320px;
+  }
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_tag],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=show_excerpt],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_max_lines],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_data_style],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_icons],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=categories_style],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_position],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_border_radius],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_from],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_to],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_move_content],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=column_order],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=sticky_posts],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=taxonomy_filter],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_filter],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=tag_filter],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_color],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_width],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=effect],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation_size] {
+  /* border: 1px solid #eee; */
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_tag]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=show_excerpt]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_max_lines]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_data_style]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_icons]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=categories_style]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_position]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_border_radius]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_from]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_to]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_move_content]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=column_order]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=sticky_posts]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=taxonomy_filter]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_filter]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=tag_filter]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_color]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_width]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=effect]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation]:before,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation_size]:before {
+  content: "PRO";
+  z-index: 2;
+  font-size: 10px;
+  padding: 0.5em;
+  font-family: inherit;
+  font-weight: 600;
+  top: 3.3em;
+  left: 1.5em;
+  background-color: #ff7f00;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_tag]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=show_excerpt]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_max_lines]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_data_style]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_icons]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=categories_style]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_position]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_border_radius]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_from]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_to]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_move_content]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=column_order]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=sticky_posts]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=taxonomy_filter]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_filter]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=tag_filter]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_color]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_width]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=effect]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation]:after,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation_size]:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2.5em 1em 1em 3.5em;
+  background-color: rgba(255, 255, 255, 0.4);
+  content: "Not avaliable in Lite version";
+  /* text-align: center; */
+  vertical-align: middle;
+  font-weight: 400;
+  color: #aaa;
+  z-index: 1;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  font-size: 1.2em;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_tag] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=show_excerpt] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_max_lines] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_data_style] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_icons] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=categories_style] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_position] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_border_radius] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_from] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_to] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_move_content] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=column_order] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=sticky_posts] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=taxonomy_filter] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_filter] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=tag_filter] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_color] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_width] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=effect] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation] .bt_bb_responsive_override_container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation_size] .bt_bb_responsive_override_container {
+  opacity: 0.3;
+}
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_tag] > select, .hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_tag] > input, .hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_tag] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=show_excerpt] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=show_excerpt] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=show_excerpt] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_max_lines] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_max_lines] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=title_max_lines] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_data_style] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_data_style] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_data_style] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_icons] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_icons] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_icons] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=categories_style] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=categories_style] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=categories_style] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_position] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_position] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_position] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_border_radius] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_border_radius] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_border_radius] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_from] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_from] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_from] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_to] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_to] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_blur_to] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_move_content] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_move_content] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=image_hover_move_content] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=column_order] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=column_order] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=column_order] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=sticky_posts] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=sticky_posts] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=sticky_posts] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=taxonomy_filter] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=taxonomy_filter] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=taxonomy_filter] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_filter] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_filter] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=post_format_filter] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=tag_filter] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=tag_filter] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=tag_filter] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_color] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_color] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_color] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_width] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_width] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=line_width] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=effect] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=effect] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=effect] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation] > .wp-picker-container,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation_size] > select,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation_size] > input,
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name=navigation_size] > .wp-picker-container {
+  opacity: 0.3;
+}
+
+/*# sourceMappingURL=admin-style.css.map */

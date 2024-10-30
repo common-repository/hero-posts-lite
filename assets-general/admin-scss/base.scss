@@ -1,0 +1,383 @@
+/* Simplify default BB light view 
+------------------------------------------------------------------ */
+
+.hero-posts-lite_page_hero-posts-edit,
+.hero-posts_page_hero-posts-edit {
+	
+	--hero-posts-checkbox-group-columns: 5;
+	
+	#bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item {
+		.bt_bb_toolbar .bt_bb_order {
+			display: none;
+		} 
+		&.bt_bb_icon {
+			padding: 0;
+			&:before {
+				display: none;
+			}
+		}	
+	}
+
+	/* Icons */
+
+	.bt_bb_dialog_content {
+		.bt_bb_icon_hero_posts_row:before { content: '\e90d'; }
+		.bt_bb_icon_hero_posts_inner_row:before { content: '\e918'; }
+		.bt_bb_icon_hero_posts_item:before { content: '\e90C'; }
+		.bt_bb_icon_hero_posts_slider_swiper:before { content: '\e916'; }
+		.bt_bb_icon_hero_posts_slider_swiper_slide:before { content: '\e916'; }
+		.bt_bb_icon_hero_posts_banner:before { content: '\e94e'; }
+		.bt_bb_icon_hero_posts_html:before { content: '\e91a'; }
+		.bt_bb_icon_hero_posts_separator:before { content: '\e914'; }
+		.bt_bb_icon_hero_posts_repeater:before { content: '\e953'; }
+		.bt_bb_icon_hero_posts_slider_swiper_repeater:before { content: '\e953'; }
+	}
+
+	/* Repeater */
+
+	#bt-bb-light-editor #bt_bb > .bt_bb_item_list .bt_bb_wrap:has(> .bt_bb_item.bt_bb_icon_hero_posts_repeater)  {
+		border-style: dotted;
+		border-width: 3px;
+		border-color: #CCCCCC;
+		> .bt_bb_item.bt_bb_icon_hero_posts_repeater {
+			background-color: transparent;
+			> .bt_bb_toolbar {
+				padding-top: 5px;
+				padding-bottom: 2px;
+				z-index: 1;
+				.bt_bb_preview_name {
+					font-weight: 400;
+					opacity: 0.6;	
+				}	
+			}
+		}
+		.bt_bb_toolbar .bt_bb_preview .bt_bb_preview_param_repeat_count {
+			font-weight: 800;
+			&:after { 
+				content: ' x ';
+				display: block;
+				float: left;   
+				padding: 0 0.4em 0 0;
+			}	
+			&:before {
+				display: block;
+				float: left;
+				font-weight: 400;
+			}	
+		}	
+	}
+
+	/* Checkbox group */
+
+	.bt_bb_dialog_item[data-type="checkbox_group"] {
+		display: grid;
+		grid-template-columns: repeat(var(--hero-posts-checkbox-group-columns), 1fr);
+		gap: 1em;
+		b {
+			grid-column: 1 / span var(--hero-posts-checkbox-group-columns);
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 0.5em;
+			padding-bottom: 0.5em;
+		}
+		label {
+			/* text-align: center; */
+			margin: 0 !important;
+			display: flex;
+			input {
+				margin: 0 5px 0 0;
+			}
+			span {
+				display: block;
+				font-size: 0.875em;
+				line-height: 1.2;	
+				margin-top: 2px;
+			}
+			
+		}	
+	}
+
+	/* Custom widths */
+
+	.bt_bb_dialog_item[data-param_name="order_by"],
+	.bt_bb_dialog_item[data-param_name="order"],
+	.bt_bb_dialog_item[data-param_name="sticky_posts"],
+	.bt_bb_dialog_item[data-param_name="image_overlay_background_gradient_type"],
+	.bt_bb_dialog_item[data-param_name="image_overlay_background_gradient_start"],
+	.bt_bb_dialog_item[data-param_name="image_overlay_background_gradient_end"],
+	.bt_bb_dialog_item[data-param_name="content_background_color"],
+	.bt_bb_dialog_item[data-param_name="content_text_color"],
+	.bt_bb_dialog_item[data-param_name="post_format_icons"],
+	.bt_bb_dialog_item[data-param_name="post_data_style"],
+	.bt_bb_dialog_item[data-param_name="categories_style"],
+	.bt_bb_dialog_item[data-param_name="navigation"],
+	.bt_bb_dialog_item[data-param_name="navigation_size"],
+	.bt_bb_dialog_item[data-param_name="navigation_vertical_position"] {
+		flex: 0 0 33%;
+	}
+	.bt_bb_dialog_item[data-param_name="content_background_color"] {
+		flex: 0 0 66%;
+	}
+	.bt_bb_dialog_item[data-param_name="category_filter"],
+	.bt_bb_dialog_item[data-param_name="tag_filter"],
+	.bt_bb_dialog_item[data-param_name="date_filter"],
+	.bt_bb_dialog_item[data-param_name="post_format_filter"],
+	.bt_bb_dialog_item[data-param_name="taxonomy_filter"],
+	.bt_bb_dialog_item[data-param_name="author_filter"],
+	.bt_bb_dialog_item[data-param_name="image_size"],
+	.bt_bb_dialog_item[data-param_name="image_lazy_load"],
+	.bt_bb_dialog_item[data-param_name="image_overlay_hover_opacity_from"],
+	.bt_bb_dialog_item[data-param_name="image_overlay_hover_opacity_to"],
+	.bt_bb_dialog_item[data-param_name="image_hover_blur_from"],
+	.bt_bb_dialog_item[data-param_name="image_hover_blur_to"],
+	.bt_bb_dialog_item[data-param_name="image_hover_zoom_from"],
+	.bt_bb_dialog_item[data-param_name="image_hover_zoom_to"],
+	.bt_bb_dialog_item[data-param_name="effect"],
+	.bt_bb_dialog_item[data-param_name="autoplay_delay"],
+	.bt_bb_dialog_item[data-param_name="pagination"],
+	.bt_bb_dialog_item[data-param_name="pagination_size"] {
+		flex: 0 0 50%;
+	}
+	
+	.bt_bb_dialog_item[data-param_name="image_lazy_load"] {
+		b {
+			margin-bottom: 1em;
+		}
+	}
+
+	/* Inner row / column */
+
+	#bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_inner_row .bt_bb_horizontal {
+		margin: 0;
+		background: #fff;
+		border: none;
+	}
+
+	/* HTML */
+
+	#bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item.bt_bb_icon_hero_posts_html {
+		.bt_bb_item[data-base="_content"] .bt_bb_toolbar > span {
+			display: none;
+		}
+		.bt_bb_content {
+			h1, h2, h3, h4, h5, p {
+				margin-top: 0;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	/* Separator */
+
+	.bt_bb_item.bt_bb_icon_hero_posts_separator {
+		opacity: 0.5;
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	/* Fix */
+
+	#bt-bb-light-editor #bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_item .bt_bb_item .bt_bb_item .bt_bb_item.bt_bb_icon > .bt_bb_toolbar ~ [data-reactid] {
+		margin-left: 0em;
+		width: 100%;
+	}
+	
+	/* Add new template */
+	
+	#bt_bb_dialog.bt_bb_dialog_add_template {
+		width: 95% !important;
+		left: 50% !important;
+		top: 50px;
+		bottom: 50px;
+		.bt_bb_dialog_content {
+			--gap: 10px;
+			--item-inner-scale: 1.1;
+			padding: calc(2 * var(--gap)) var(--gap) 0;
+			overflow-x: hidden;
+			max-height: calc(100% - 62px) !important;
+			&.loading {
+				opacity: 0.3;
+				.bt_bb_hero_template_item {
+					pointer-events: none;
+					cursor: initial;
+				}
+			}
+			.bt_bb_hero_template_item {
+				padding: 0 var(--gap) calc(2 * var(--gap));
+				flex-basis: 33.3333%;
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				&:hover {
+					z-index: 1;
+					.bt_bb_hero_template_item_inner {
+						box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.2);
+						/* height: auto; */
+					}
+				}
+				&:hover {
+					.bt_bb_hero_template_item_inner {
+						/* transform: scale(var(--item-inner-scale)); */
+					}
+				}
+				.bt_bb_hero_template_item_inner {
+					border-radius: 5px;
+					height: 100%;
+					box-sizing: border-box;
+					border: 5px solid #eee;
+					background-color: white;
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					&:before, &:after {
+						content: ' ';
+						flex: auto;
+					}
+					&:after {
+						background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.05) 100%);
+					}
+					&:before {
+						background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+					}
+					img {
+						width: auto;
+						display: block;
+						padding: 5px;
+						/* transform: translateY(0); */
+					}
+					.bt_bb_hero_template_item_inner_pro_only {
+						text-decoration: none;
+						color: #0e0e0e;
+						padding: 1em;
+						text-align: center;
+						position: absolute;
+						bottom: 0;
+						top: 0;
+						left: 0;
+						right: 0;
+						display: flex; 
+						flex-direction: column;
+						justify-content: center;
+						z-index: 1;
+						.bt_bb_hero_template_item_inner_pro_only_info {
+							font-weight: 800;
+							font-size: 1.5em;
+							display: block;
+						}
+						&:before {	
+							content: "\f160";
+							font-family: 'dashicons';
+							font-size: 3.5em;
+							display: block;
+						}
+						&:hover {
+							/* transform: translate(-50%, -50%) scale(1.1); */
+						}
+					}
+					.bt_bb_hero_template_item_inner_pro_only_href,
+					.bt_bb_hero_template_item_inner_href,
+					.bt_bb_hero_template_item_inner_add {
+						text-decoration: none;
+						color: white;
+						border-radius: 5px;
+						padding: 8px 12px;
+						display: flex;
+						gap: 0.5em;
+						position: absolute;
+						bottom: 1em;
+						/* box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.2); */
+						transform: translateY(0) translateX(0);
+						opacity: 0;
+						transition: opacity 300ms ease-out, transform 200ms ease-out;
+						z-index: 1;
+					}
+					&:hover {
+						.bt_bb_hero_template_item_inner_pro_only {
+							opacity: 1;
+						}	
+						.bt_bb_hero_template_item_inner_pro_only_href,
+						.bt_bb_hero_template_item_inner_href,
+						.bt_bb_hero_template_item_inner_add {
+							opacity: 1;
+						}	
+					}
+					.bt_bb_hero_template_item_inner_pro_only_href {
+						background: #ff7f00;
+						opacity: 1;
+						position: relative;
+						bottom: auto;
+						display: inline-flex;
+						margin: 1em auto;
+						&:before {	
+							content: "\e951";
+							font-family: bold-builder;
+							display: inline-block;
+						}
+						&:hover {
+							transform: translateY(-5px);
+						}
+					}
+					.bt_bb_hero_template_item_inner_href {
+						background: #ff7f00;
+						right: 1em;
+						&:before {	
+							content: "\e951";
+							font-family: bold-builder;
+							display: inline-block;
+						}
+						&:hover {
+							transform: translateY(-5px);
+						}
+					}
+					.bt_bb_hero_template_item_inner_add {
+						background: #a3a3a3;
+						left: 1em;
+						&:before {
+							content: "\e908";
+							font-family: bold-builder;
+							display: inline-block;
+							/* transform: rotate(45deg);							 */
+						}
+					}
+				}
+				&.bt_bb_hero_template_item_pro {
+					img {
+						opacity: 0.3;
+					}
+					.bt_bb_hero_template_item_inner_href,
+					.bt_bb_hero_template_item_inner_add {
+						display: none;
+					}
+				}
+				&:not(.bt_bb_hero_template_item_pro):not(.bt_bb_hero_template_item_title) {
+					cursor: pointer;
+					.bt_bb_hero_template_item_inner_pro_only {
+						display: none;
+					}
+				}
+				&:first-child .bt_bb_hero_template_item_inner_href {
+					display: none;
+				} 
+			}
+			.bt_bb_hero_template_item_title {
+				flex-basis: 100%;
+				font-size: 1.25em;
+			}
+		}		
+	}
+	
+	/* Lite version hidden options */
+
+	/*.bt_bb_dialog_item[data-param_name="image_hover_blur_from"],
+	.bt_bb_dialog_item[data-param_name="image_hover_blur_to"] {
+		opacity: 0.5;
+		 pointer-events: none;
+	}*/
+	
+}
+
+
+

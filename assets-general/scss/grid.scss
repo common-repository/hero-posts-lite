@@ -1,0 +1,78 @@
+/* Grid fix 
+------------------------------------------------------------------ */
+
+@use "sass:math";
+
+/* Row */
+
+.hero-posts-row {
+	--hero-posts-column-gap: var(--hero-posts-base-gap);
+	--hero-posts-column-gap-half: calc(var(--hero-posts-column-gap) / 2);
+	clear: both;
+	display: flex;
+	margin: 0 calc(-1 * var(--hero-posts-column-gap-half));
+	width: calc(100% + var(--hero-posts-column-gap));
+    flex-wrap: wrap;
+	
+	/* Column */
+	
+	.hero-posts-column {
+		--hero-posts-column-gap: var(--hero-posts-base-gap);
+		--hero-posts-column-gap-half: calc(var(--hero-posts-column-gap) / 2);
+		order: var(--hero-posts-column-order);
+		flex-basis: 0 0 var(--hero-posts-column-width, 100%);
+		max-width: var(--hero-posts-column-width, 100%);
+		padding: 0 var(--hero-posts-column-gap-half);
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		&.hero-posts-item-column-vertical-align-bottom {
+			> .hero-posts-column-inner {
+				justify-content: flex-end;
+			}
+		}
+		&.hero-posts-item-column-vertical-align-middle {
+			> .hero-posts-column-inner {
+				justify-content: center;
+			}
+		}
+		> .hero-posts-column-inner {
+			flex-basis: 100%;
+			display: flex;
+			flex-direction: column;
+			text-align: var(--hero-posts-column-align);
+		} 
+		&.hero-posts-column-items-height-keep > .hero-posts-column-inner {
+			justify-content: space-between;
+			> .hero-posts-item {
+				flex-basis: 100%;
+				.hero-posts-item-image {
+					height: 100%;
+				}
+			}
+			> .hero-posts-slider-swiper {
+				flex-basis: 100%;
+				.hero-posts-slider-swiper-holder {
+					height: 100%;
+					.hero-posts-item {
+						height: 100%;
+						.hero-posts-item-image {
+							height: 100%;
+						}
+					}	
+				}				
+			}
+
+		}
+	}
+	@each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+		.hero-posts-column.hero-posts-column-width-#{$i} {
+			flex-basis: math.percentage(math.div($i, 12));
+			max-width: math.percentage(math.div($i, 12));
+		}
+	}
+	.hero-posts-column.hero-posts-column-width-2_4 {
+		flex-basis: 20%;
+		max-width: 20%;
+	}	
+}

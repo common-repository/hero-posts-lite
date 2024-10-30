@@ -1,0 +1,47 @@
+/* Simplify default BB light view 
+------------------------------------------------------------------ */
+
+#bt-bb-light-editor #bt_bb .bt_bb_icon_hero_posts_item {
+	&:hover {
+		border-color: #ec008c; 
+		box-shadow: 0 0 0 2px #ec008c;
+	}
+	.bt_bb_preview {
+		/*display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		.bt_bb_preview_name {
+			grid-column: 1 / span 3;
+		}
+		.bt_bb_preview_param_vertical_align {
+			grid-row: 2 / span 1;
+			grid-column: 1 / span 1;
+			&:before {
+				content: 'v align: ';
+			}
+		}
+		.bt_bb_preview_param_align {
+			grid-row: 2 / span 1;
+			grid-column: 2 / span 1;
+			&:before {
+				content: 'h align: ';
+			}
+		}
+		.bt_bb_preview_param_image_position {
+			grid-row: 2 / span 1;
+			grid-column: 3 / span 1;
+			&:before {
+				content: 'image: ';
+			}
+		}*/
+	}
+}
+
+@media only screen and (min-width: 850px) {
+	.hero-posts-template_page_hero-posts-edit #postbox-container-1 {
+		position: fixed;
+		right: 320px;
+	}
+}
+
+

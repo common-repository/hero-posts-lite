@@ -1,0 +1,212 @@
+@use 'vars-static';
+
+/* --------- */
+/* Variables     */
+/* Naming:
+   --hero-posts-BBL_ELEMENT-DOM_ELEMENT-CASE-PROPERTY   */
+/* ------------------------------------ */	
+	
+.hero-posts-container {
+	
+	/* --------- */
+	/* - General -- */
+	/* --------- */	
+	
+	/* General gaps */
+
+	--hero-posts-base-gap: 20px;													/* General gap, inheritet by row, row inner etc, edit: custom style */
+	--hero-posts-column-gap: var(--hero-posts-base-gap);							/* Deafult column gap */
+	--hero-posts-separator-top-margin: var(--hero-posts-base-gap);					/* Default separator top margin, edit: admin  */
+	--hero-posts-separator-bottom-margin: var(--hero-posts-base-gap);				/* Default separator bottom margin, edit: admin */
+	
+	/* -----------------  */
+	/* Grid row/columns   */
+	/* -----------------  */
+
+	/* --hero-posts-column-align: left;*/                                   		/*  column align, edit:admin  */
+
+	/* ------- */
+	/* Item    */
+	/* ------- */
+
+	/* General paddings */
+
+	--hero-posts-item-gap: calc(var(--hero-posts-base-gap) * 0.5);					/* Gap between text and image (left, right image position), edit: custom style */
+	--hero-posts-item-gap-vertical: calc(var(--hero-posts-base-gap) * 0.5);		/* Gap between text and image (top, bottom image position), edit: custom style */
+	--hero-posts-item-content-show-in-gap: 10px;									/* Gap between show-in elements, edit: custom style */
+	--hero-posts-item-content-image-position-background-margin: 20px;				/* Content area margin (image postion: background), edit: custom style */	
+	--hero-posts-item-content-image-margin: 20px;									/* Image ontent area margin, edit: custom style */	
+	--hero-posts-item-content-padding: 0;											/* Content area padding, edit: custom style */
+	--hero-posts-item-content-max-width: 100%;										/* Content area max width, edit: custom style */
+	
+	
+	/* Colors and backgrounds */
+
+	/*--hero-posts-accent-color: inherit; */
+	
+	--hero-posts-light-color: #fff;													/* General light color, edit: custom style */
+	--hero-posts-dark-color: #000;													/* General dark color, edit: custom style */
+
+	--hero-posts-item-content-color: inherit;										/* Content area color, edit: custom style */
+	--hero-posts-item-content-background-color: none;								/* Content area background color, edit: custom style */
+
+	--hero-posts-item-content-image-position-background-color: var(--hero-posts-light-color);	/* Content area color (image postion: background), edit: custom style */	
+	--hero-posts-item-content-image-position-background-background-color: none;					/* Content area background color (image postion: background), edit: custom style */
+
+	--hero-posts-item-image-content-top-color: var(---hero-posts-light-color);		/* Top content area font color, edit: custom style */
+	--hero-posts-item-image-content-bottom-color: var(---hero-posts-light-color);	/* Bottom content area font color, edit: custom style */
+	
+	/* Title etc margins */
+	
+	--hero-posts-item-content-supertitle-margin: 0 0 0.25em 0;
+	--hero-posts-item-content-title-margin: 0 0 0 0;
+	--hero-posts-item-content-subtitle-margin: 0.25em 0 0 0;
+	--hero-posts-item-content-excerpt-margin: 0.5em 0 0 0;
+	
+	/* Content elements font family */
+	
+	/* --hero-posts-item-content-supertitle-font-family: inherit; */				/* Supertitle font family (default: use theme settings), edit: custom style */
+	/* --hero-posts-item-content-title-font-family: inherit; */						/* Title font family (default: use theme settings), edit: custom style */
+	/* --hero-posts-item-content-subtitle-font-family: inherit; */					/* Subtitle font family (default: use theme settings), edit: custom style */
+	/* --hero-posts-item-content-excerpt-font-family: inherit; */					/* Subtitle font family (default: use theme settings), edit: custom style */
+	
+	/* Show in icons */
+	
+	/* --hero-posts-post-data-delimiter:				"/"; */						/* Delimiter between post data elements */
+	
+	/* Taxonomy pill */
+	--hero-posts-item-taxonomy-pill-background-color: 	var(--hero-posts-accent-color);
+	--hero-posts-item-taxonomy-pill-color: 				white;
+	--hero-posts-item-taxonomy-pill-padding:	 		2px 6px;
+	--hero-posts-item-taxonomy-pill-border-radius: 		4px;
+		
+	/* Image */
+	
+	--hero-posts-item-side-image-width: 				33%; 				   		/* Image width (side), edit: custom style */
+	--hero-posts-item-image-background-color: 			none;						/* Image container background solor f.e. rgba(0, 0, 0, 0.05), edit: custom style */
+	--hero-posts-item-image-border-radius: 				0;							/* Image container border radius, edit: custom style */
+	
+	--hero-posts-item-image-hover-zoom-to:				1;				      		/* Image start scale, edit: admin */
+	--hero-posts-item-image-hover-zoom-from:			1.1;						/* Image final (hover) scale, edit: admin */
+	--hero-posts-item-image-hover-zoom-duration:		400ms;						/* Zoom transition duration, edit: custom css */
+	
+	--hero-posts-item-image-hover-blur-from:	    	0;							/* Image start blur, edit: admin */
+	--hero-posts-item-image-hover-blur-to:			   	2px;                 		/* Image final (hover) blur, edit: admin */
+	--hero-posts-item-image-hover-blur-duration:		400ms;						/* Blur transition duration, edit: custom css */
+
+	--hero-posts-item-image-hover-move-content:        	0;
+	--hero-posts-item-image-hover-move-content-delay-supertitle:  0ms;				/* Move content (tranlsateY), edit: admin */
+	--hero-posts-item-image-hover-move-content-delay-title:  100ms;					/* Move content (tranlsateY), edit: admin */
+	--hero-posts-item-image-hover-move-content-delay-subtitle:  200ms;				/* Move content (tranlsateY), edit: admin */
+	
+	/* Image overlay */
+	
+	--hero-posts-item-image-overlay-hover-opacity-from:	1;							/* Image overlay start opacity, edit: admin */
+	--hero-posts-item-image-overlay-hover-opacity-to:	0;					   		/* Image overlay final (hover) opacity, edit: admin */
+	--hero-posts-item-image-overlay-hover-opacity-duration:		400ms;				/* Opacity transition duration, edit: custom css */
+	
+	--hero-posts-item-image-overlay-background-color:	none;
+
+	--hero-posts-item-align: inherit;
+	/* --hero-posts-item-content-margin: 0.5em 0 0; */                          	/* Item content margin, edit: Custom style */
+	/* --hero-posts-item-background-color: transparent; */                       	/* Item background color edit: Custom style */   
+	/* --hero-posts-item-max-height: none; */                                    	/* Item max height, edit: Custom style */
+	/* --hero-posts-item-min-height: none; */                                    	/* Item min height, edit: Custom style */
+	/* --hero-posts-item-content-vertical-align: flex-start; */                   	/* Item content vertical align, edit: admin */
+	/* --hero-posts-item-content-top-border-top: medium none color; */           	/* Item content top border of top content, edit: Custom style */
+	/* --hero-posts-item-content-top-padding: 0; */                             	/* Item content top padding, edit: Custom style */
+	/* --hero-posts-item-content-top-margin: 0; */                               	/* Item content top margin, edit: Custom style  */
+	/* --hero-posts-item-content-top-font-size: medium; */                       	/* Item content top font size,edit: admin */
+	/* --hero-posts-item-content-middle-inner-padding: 0; */                     	/* Item content middle padding, edit: Custom style*/
+	/* --hero-posts-item-content-middle-inner-background-color: transparent; */  	/* Item content middle background color, edit: Custom style */
+	/* --hero-posts-item-content-bottom-border-top: medium none color; */        	/* Item content bottom border top, edit: Custom style */ 
+	/* --hero-posts-item-content-bottom-padding: 0; */                           	/* Item content bottom padding, edit: Custom style */
+	/* --hero-posts-item-content-margin: 0; */                            			/* Item content margin, edit: Custom style */
+	/* --hero-posts-item-content-bottom-font-size: medium; */                    	/* Item content bottom font size, edit:admin */
+	/* --hero-posts-item-content-top-hover-color: #000;                           	/* Item content top color on hover, edit: Custom style    */
+	/* --hero-posts-item-content-top-hover-text-decoration: none;                 	/* Item content top text decoration on hover, edit: Custom style  */
+	/* --hero-posts-item-content-top-text-transform: capitalize;					/* Item content top text transform, edit: Custom style*/	
+	/* --hero-posts-item-content-top-font-weight: normal;							/* Item content top font weight, edit: Custom style*/
+	/* --hero-posts-item-content-top-letter-spacing: normal;						/* Item content top letter spacing, edit: Custom style 
+	/* --hero-posts-item-content-top-line-height: normal;							/* Item content top line height, edit: Custom style*/
+	/* --hero-posts-item-content-top-text-decoration: none;							/* Item content top text decoration, edit: Custom style*/
+	/* --hero-posts-item-content-bottom-hover-color: #000;                        	/* Item content bottom color on hover, edit: Custom style    */
+	/* --hero-posts-item-content-bottom-hover-text-decoration: none;              	/* Item content bottom text decoration on hover, edit: Custom style  */
+	/* --hero-posts-item-content-bottom-text-transform: capitalize;					/* Item content bottom text transform, edit: Custom style*/	
+	/* --hero-posts-item-content-bottom-font-weight: normal;						/* Item content bottom font weight, edit: Custom style*/
+	/* --hero-posts-item-content-bottom-letter-spacing: normal;						/* Item content bottom letter spacing, edit: Custom style 
+	/* --hero-posts-item-content-bottom-line-height: normal;						/* Item content bottom line height, edit: Custom style*/
+	/* --hero-posts-item-content-bottom-text-decoration: none;						/* Item content bottom text decoration, edit: Custom style*/
+	/* --hero-posts-item-content-supertitle-hover-color: #000;                    	/* Item content supertitle color on hover, edit: Custom style    */
+	/* --hero-posts-item-content-supertitle-hover-text-decoration: none;          	/* Item content supertitle text decoration on hover, edit: Custom style  */
+	/* --hero-posts-item-content-supertitle-text-transform: capitalize;				/* Item content supertitle text transform, edit: Custom style*/	
+	/* --hero-posts-item-content-supertitle-font-weight: normal;					/* Item content supertitle font weight, edit: Custom style*/
+	/* --hero-posts-item-content-supertitle-letter-spacing: normal;					/* Item content supertitle letter spacing, edit: Custom style 
+	/* --hero-posts-item-content-supertitle-line-height: normal;					/* Item content supertitle line height, edit: Custom style*/
+	/* --hero-posts-item-content-supertitle-text-decoration: none;					/* Item content supertitle text decoration, edit: Custom style*/
+	/* --hero-posts-item-content-title-hover-color: #000;                         	/* Item content title color on hover, edit: Custom style    */
+	/* --hero-posts-item-content-title-hover-text-decoration: none;               	/* Item content title text decoration on hover, edit: Custom style  */
+	/* --hero-posts-item-content-title-text-transform: capitalize;					/* Item content title text transform, edit: Custom style*/	
+	/* --hero-posts-item-content-title-font-weight: normal;							/* Item content title font weight, edit: Custom style*/
+	/* --hero-posts-item-content-title-letter-spacing: normal;						/* Item content title letter spacing, edit: Custom style 
+	/* --hero-posts-item-content-title-line-height: normal;							/* Item content title line height, edit: Custom style*/
+	/* --hero-posts-item-content-title-text-decoration; none;;						/* Item content title text decoration, edit: Custom style*/
+	/* --hero-posts-item-content-subtitle-hover-color: #000;                      	/* Item content subtitle color on hover, edit: Custom style    */
+	/* --hero-posts-item-content-subtitle-hover-text-decoration: none;            	/* Item content subtitle text decoration on hover, edit: Custom style  */
+	/* --hero-posts-item-content-subtitle-text-transform: capitalize;				/* Item content subtitle text transform, edit: Custom style*/	
+	/* --hero-posts-item-content-subtitle-font-weight: normal;						/* Item content subtitle font weight, edit: Custom style*/
+	/* --hero-posts-item-content-subtitle-letter-spacing: normal;					/* Item content subtitle letter spacing, edit: Custom style 
+	/* --hero-posts-item-content-subtitle-line-height: normal;						/* Item content subtitle line height, edit: Custom style*/
+	/* --hero-posts-item-content-subtitle-text-decoration: none;					/* Item content subtitle text decoration, edit: Custom style*/
+	/* --hero-posts-item-content-excerpt-hover-color: #000;                       	/* Item content excerpt color on hover, edit: Custom style    */
+	/* --hero-posts-item-content-excerpt-hover-text-decoration: none;             	/* Item content excerpt text decoration on hover, edit: Custom style  */
+	/* --hero-posts-item-content-excerpt-text-transform: capitalize;				/* Item content excerpt text transform, edit: Custom style*/	
+	/* --hero-posts-item-content-excerpt-font-weight: normal;						/* Item content excerpt font weight, edit: Custom style*/
+	/* --hero-posts-item-content-excerpt-letter-spacing: normal;					/* Item content excerpt letter spacing, edit: Custom style 
+	/* --hero-posts-item-content-excerpt-line-height: normal;						/* Item content excerpt line height, edit: Custom style*/
+	/* --hero-posts-item-content-excerpt-text-decoration: none;						/* Item content excerpt text decoration, edit: Custom style*/
+	
+	/* --------- */
+	/* Separator */
+	/* --------- */
+
+	--hero-posts-separator-top-margin: var(--hero-posts-base-gap);					/* Separator / Top margin / Edit: admin  */
+	--hero-posts-separator-line-width: 1px;
+	--hero-posts-separator-line-style: none;
+	--hero-posts-separator-line-color: #ccc;
+
+	/* --------- */
+	/* Swiper    */
+	/* --------- */
+
+	--swiper-navigation-size: 33px;                                    				/* Navigation arrow default value - medium 33px, edit: admin */
+	--swiper-pagination-progressbar-height: 8px;                       				/* Pagination height default value - medium 8px, edit: admin */
+	--swiper-pagination-fraction-color: var(--hero-posts-light-color);              /* Pagination (e.g. 1/6) color, edit: custom style  */
+	--swiper-pagination-fraction-opacity: 0.5;                         				/* Pagination (e.g. 1/6) opacity, edit: custom style  */
+	--swiper-pagination-fraction-font-size: inherit;                   				/* Pagination (e.g. 1/6) size, edit: custom style  */  
+	--swiper-pagination-bullet-size: 12px;                             				/* Navigation bulett default value - medium 12px, edit: admin  */
+	--swiper-navigation-color: var(--hero-posts-light-color);
+	--swiper-navigation-outside-color: var(--hero-posts-dark-color);
+	--swiper-pagination-bullet-inactive-color: var(--hero-posts-light-color);
+	--hero-posts-slider-swiper-space-between: var(--hero-posts-base-gap);
+	
+
+
+	/* --------- */
+	/* Banner    */
+	/* --------- */
+
+	/* --hero-posts-banner-border-width: 1px; */                       				/* Banner border width, edit: admin */
+	/* --hero-posts-banner-border-style: solid; */                     				/* Banner border style, edit: admin */
+	/* --hero-posts-banner-border-color: gray; */                      				/* Banner border color, edit: admin */ 
+				
+}
+
+/* Needs to be written again */
+
+.hero-posts-item, .hero-posts-column, .hero-posts-row {
+	--hero-posts-column-gap-half: calc(var(--hero-posts-column-gap) / 2);
+	--hero-posts-column-gap-full: var(--hero-posts-column-gap);
+}
+
+ 

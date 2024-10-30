@@ -1,0 +1,19 @@
+/* Separator
+------------------------------------------------------------------ */
+
+.hero-posts-container hr.hero-posts-separator {
+	border: 0;
+    width: 100%;
+	margin-top: var(--hero-posts-separator-top-margin);
+	margin-bottom: var(--hero-posts-separator-bottom-margin);
+    border-bottom-width:  var(--hero-posts-separator-line-width);
+	border-bottom-style: var(--hero-posts-separator-line-style);
+	border-bottom-color: var(--hero-posts-separator-line-color);
+    background: none;
+	&.hero-posts-separator-top-margin-inherit {
+		margin-top: var(--hero-posts-base-gap) !important;
+	}
+	&.hero-posts-separator-bottom-margin-inherit {
+		margin-bottom: var(--hero-posts-base-gap) !important;
+	}
+}

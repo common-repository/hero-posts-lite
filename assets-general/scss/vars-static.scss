@@ -1,0 +1,118 @@
+
+/* ---------------- */
+/* Statis variables */
+/* ---------------- */	
+	
+.hero-posts-container {
+
+		
+	/* Font sizes */
+	
+	/* Content font sizes */
+
+	/*--hero-posts-item-content-font-size: inherit;*/
+	--hero-posts-item-content-font-size-inherit: 					inherit;
+	--hero-posts-item-content-font-size-extra-small: 				0.875rem;
+	--hero-posts-item-content-font-size-small: 						0.875rem;
+	--hero-posts-item-content-font-size-normal: 					0.875rem;
+	--hero-posts-item-content-font-size-medium: 					0.875rem;
+	--hero-posts-item-content-font-size-large: 						1rem;
+	--hero-posts-item-content-font-size-extra-large: 				1rem;	
+	--hero-posts-item-content-font-size-huge: 						1rem;
+	--hero-posts-item-content-font-size-extra-huge: 				1rem;
+	
+	/* Title font sizes */
+
+	/*--hero-posts-item-content-title-font-size: inherit;*/
+	--hero-posts-item-content-title-font-size-inherit: 				inherit;
+	--hero-posts-item-content-title-font-size-extra-small: 			0.8rem;
+	--hero-posts-item-content-title-font-size-small: 				1rem;
+	--hero-posts-item-content-title-font-size-normal: 				1.25rem;
+	--hero-posts-item-content-title-font-size-medium: 				1.563rem;
+	--hero-posts-item-content-title-font-size-large: 				1.953rem;
+	--hero-posts-item-content-title-font-size-extra-large: 			2.441rem;	
+	--hero-posts-item-content-title-font-size-huge: 				3.052rem;
+	--hero-posts-item-content-title-font-size-extra-huge: 			3.81rem;
+	
+	/* Supertitle font sizes */
+
+	/*--hero-posts-item-content-supertitle-font-size: inherit;*/
+	--hero-posts-item-content-supertitle-font-size-inherit: 		inherit;
+	--hero-posts-item-content-supertitle-font-size-extra-small: 	0.875rem;
+	--hero-posts-item-content-supertitle-font-size-small: 			0.875rem;
+	--hero-posts-item-content-supertitle-font-size-normal: 			0.875rem;
+	--hero-posts-item-content-supertitle-font-size-medium: 			0.875rem;
+	--hero-posts-item-content-supertitle-font-size-large: 			1rem;
+	--hero-posts-item-content-supertitle-font-size-extra-large: 	1rem;	
+	--hero-posts-item-content-supertitle-font-size-huge: 			1rem;
+	--hero-posts-item-content-supertitle-font-size-extra-huge: 		1.125rem;
+	
+	/* Subtitle font sizes */
+
+	/*--hero-posts-item-content-subtitle-font-size: inherit;*/
+	--hero-posts-item-content-subtitle-font-size-inherit: 			inherit;
+	--hero-posts-item-content-subtitle-font-size-extra-small: 		0.875rem;
+	--hero-posts-item-content-subtitle-font-size-small: 			0.875rem;
+	--hero-posts-item-content-subtitle-font-size-normal: 			0.875rem;
+	--hero-posts-item-content-subtitle-font-size-medium: 			0.875rem;
+	--hero-posts-item-content-subtitle-font-size-large: 			1rem;
+	--hero-posts-item-content-subtitle-font-size-extra-large: 		1rem;	
+	--hero-posts-item-content-subtitle-font-size-huge: 				1rem;
+	--hero-posts-item-content-subtitle-font-size-extra-huge: 		1.25rem;
+	
+	/* Excerpt font sizes */
+
+	/*--hero-posts-item-content-excerpt-size: inherit;*/
+	--hero-posts-item-content-excerpt-font-size-inherit: 			inherit;
+	--hero-posts-item-content-excerpt-font-size-extra-small: 		0.875rem;
+	--hero-posts-item-content-excerpt-font-size-small: 				0.875rem;
+	--hero-posts-item-content-excerpt-font-size-normal: 			0.875rem;
+	--hero-posts-item-content-excerpt-font-size-medium: 			1rem;
+	--hero-posts-item-content-excerpt-font-size-large: 				1rem;
+	--hero-posts-item-content-excerpt-font-size-extra-large: 		1.125rem;	
+	--hero-posts-item-content-excerpt-font-size-huge: 				1.25rem;
+	--hero-posts-item-content-excerpt-font-size-extra-huge: 		1.25rem;
+	
+	/* Colors */
+	
+	--hero-posts-dark-color-rgb: 	0, 0, 0;	
+	--hero-posts-dark-color: 		rgb(var(--hero-posts-dark-color-rgb));	
+	--hero-posts-dark-color-0: 		rgba(var(--hero-posts-dark-color-rgb), 0);	
+	--hero-posts-dark-color-10: 	rgba(var(--hero-posts-dark-color-rgb), 0.1);	
+	--hero-posts-dark-color-20: 	rgba(var(--hero-posts-dark-color-rgb), 0.2);	
+	--hero-posts-dark-color-30: 	rgba(var(--hero-posts-dark-color-rgb), 0.3);	
+	--hero-posts-dark-color-40: 	rgba(var(--hero-posts-dark-color-rgb), 0.4);	
+	--hero-posts-dark-color-50: 	rgba(var(--hero-posts-dark-color-rgb), 0.5);	
+	--hero-posts-dark-color-60: 	rgba(var(--hero-posts-dark-color-rgb), 0.6);	
+	--hero-posts-dark-color-70: 	rgba(var(--hero-posts-dark-color-rgb), 0.7);	
+	--hero-posts-dark-color-80: 	rgba(var(--hero-posts-dark-color-rgb), 0.8);	
+	--hero-posts-dark-color-90: 	rgba(var(--hero-posts-dark-color-rgb), 0.9);	
+	--hero-posts-dark-color-100: 	rgba(var(--hero-posts-dark-color-rgb), 1);
+
+	--hero-posts-light-color-rgb: 	255, 255, 255;	
+	--hero-posts-light-color: 		rgb(var(--hero-posts-light-color-rgb));	
+	--hero-posts-light-color-0: 	rgba(var(--hero-posts-light-color-rgb), 0);	
+	--hero-posts-light-color-10: 	rgba(var(--hero-posts-light-color-rgb), 0.1);	
+	--hero-posts-light-color-20: 	rgba(var(--hero-posts-light-color-rgb), 0.2);	
+	--hero-posts-light-color-30: 	rgba(var(--hero-posts-light-color-rgb), 0.3);	
+	--hero-posts-light-color-40: 	rgba(var(--hero-posts-light-color-rgb), 0.4);	
+	--hero-posts-light-color-50: 	rgba(var(--hero-posts-light-color-rgb), 0.5);	
+	--hero-posts-light-color-60: 	rgba(var(--hero-posts-light-color-rgb), 0.6);	
+	--hero-posts-light-color-70: 	rgba(var(--hero-posts-light-color-rgb), 0.7);	
+	--hero-posts-light-color-80: 	rgba(var(--hero-posts-light-color-rgb), 0.8);	
+	--hero-posts-light-color-90: 	rgba(var(--hero-posts-light-color-rgb), 0.9);	
+	--hero-posts-light-color-100: 	rgba(var(--hero-posts-light-color-rgb), 1);
+	
+	--hero-posts-accent-color-0: 	rgba(var(--hero-posts-accent-color-rgb), 0);	
+	--hero-posts-accent-color-10: 	rgba(var(--hero-posts-accent-color-rgb), 0.1);	
+	--hero-posts-accent-color-20: 	rgba(var(--hero-posts-accent-color-rgb), 0.2);	
+	--hero-posts-accent-color-30: 	rgba(var(--hero-posts-accent-color-rgb), 0.3);	
+	--hero-posts-accent-color-40: 	rgba(var(--hero-posts-accent-color-rgb), 0.4);	
+	--hero-posts-accent-color-50: 	rgba(var(--hero-posts-accent-color-rgb), 0.5);	
+	--hero-posts-accent-color-60: 	rgba(var(--hero-posts-accent-color-rgb), 0.6);	
+	--hero-posts-accent-color-70: 	rgba(var(--hero-posts-accent-color-rgb), 0.7);	
+	--hero-posts-accent-color-80: 	rgba(var(--hero-posts-accent-color-rgb), 0.8);	
+	--hero-posts-accent-color-90: 	rgba(var(--hero-posts-accent-color-rgb), 0.9);	
+	--hero-posts-accent-color-100: 	rgba(var(--hero-posts-accent-color-rgb), 1);
+}
+ 

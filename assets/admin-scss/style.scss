@@ -1,0 +1,59 @@
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="title_tag"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="show_excerpt"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="title_max_lines"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="post_data_style"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="post_format_icons"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="categories_style"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="image_position"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="image_border_radius"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="image_hover_blur_from"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="image_hover_blur_to"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="image_hover_move_content"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="column_order"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="sticky_posts"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="taxonomy_filter"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="post_format_filter"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="tag_filter"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="line_color"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="line_width"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="effect"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="navigation"],
+.hero-posts-lite_page_hero-posts-edit #bt_bb_dialog .bt_bb_dialog_item[data-param_name="navigation_size"] {
+	/* border: 1px solid #eee; */
+	&:before {
+		content: "PRO";
+		z-index: 2;
+		font-size: 10px;
+		padding: 0.5em;
+		font-family: inherit;
+		font-weight: 600;
+		top: 3.3em;
+		left: 1.5em;
+		background-color: #ff7f00;
+	}
+	&:after {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 2.5em 1em 1em 3.5em;
+		background-color: rgba(255, 255, 255, 0.4);
+		content: "Not avaliable in Lite version";
+		/* text-align: center; */
+		vertical-align: middle;
+		font-weight: 400;
+		color: #aaa;
+		z-index: 1;
+		width: auto;
+		height: auto;
+		border-radius: 0;
+		font-size: 1.2em;
+	}
+	.bt_bb_responsive_override_container {
+		opacity: 0.3;
+	}
+	> select, > input, > .wp-picker-container {
+		opacity: 0.3;
+	}
+}
